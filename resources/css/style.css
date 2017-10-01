@@ -123,7 +123,7 @@ html {
 
 .product #item img {
   height: 9rem;
-  max-width: 100%;
+  width: auto;
   padding: 2rem;
 }
 
@@ -145,15 +145,36 @@ html {
   justify-content: space-between;
 }
 
-.information #item {
+.information .item {
   display: flex;
   flex-direction: column;
   width: 35%;
+  margin-bottom: 4rem;
 }
 
-.information .black p {
+#black {
   text-align: left;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 5rem;
+}
+
+.footer .container {
+  width: 960px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer p {
+  color: white;
 }

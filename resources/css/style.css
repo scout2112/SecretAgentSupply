@@ -4,8 +4,7 @@ html {
 }
 
 .container {
-  width: 960px;
-  margin-left:
+
 }
 
 .black {
@@ -14,17 +13,24 @@ html {
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
   background-color: black;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: row;
   text-transform: uppercase;
   align-items: center;
+  justify-content: flex-start;
+  width: 960px;
 }
 
 .header img {
   height: 1.5rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   margin-right: 1rem;
 }
 
@@ -35,8 +41,7 @@ html {
 
 .banner {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -44,14 +49,24 @@ html {
   height: 25rem;
 }
 
+.banner .container {
+  display: flex;
+  justify-content: flex-start;
+  width: 960px;
+}
+
 #new {
   display: flex;
+  background-color: black;
   flex-direction: column;
   padding-left: 3rem;
   width: 20rem;
+  margin-top: 9rem;
+  margin-bottom: 6rem;
 }
 
 #new p {
+  color: white;
   font-size: 1rem;
   font-weight: bold;
   margin-top: 2rem;
@@ -60,6 +75,7 @@ html {
 }
 
 #new h2 {
+  color: white;
   margin-bottom: 2rem;
   font-size: 2rem;
   font-weight: bold;
@@ -69,39 +85,75 @@ html {
 .navigation {
   background-color: firebrick;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
-.navigation ul {
+.navigation .container {
+  width: 960px;
+}
+
+.navigation .container ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
-
-.navigation li {
-  margin: .75rem auto;
+  justify-content: space-between;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
 }
 
 .product {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  margin: 3rem auto;
+  justify-content: center;
 }
 
-#item {
+.product .container {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0;
+  justify-content: space-between;
+}
+
+.product #item {
   display: flex;
   width: 30%;
   border: 4px solid black;
   flex-direction: column;
 }
 
-#item img {
+.product #item img {
   height: 9rem;
   max-width: 100%;
   padding: 2rem;
 }
 
-#item p {
+.product #item p {
   text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+}
+
+.information .container {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.information #item {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.information .black p {
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
 }

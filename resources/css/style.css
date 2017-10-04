@@ -3,10 +3,6 @@ html {
   font-family: Helvetica;
 }
 
-.container {
-
-}
-
 .black {
   background-color: black;
   color: white;
@@ -114,20 +110,20 @@ html {
   justify-content: space-between;
 }
 
-.product #item {
+.product .buy {
   display: flex;
   width: 30%;
   border: 4px solid black;
   flex-direction: column;
 }
 
-.product #item img {
+.product .buy img {
   height: 9rem;
   width: auto;
   padding: 2rem;
 }
 
-.product #item p {
+.product .buy p {
   text-align: center;
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -177,4 +173,50 @@ html {
 
 .footer p {
   color: white;
+}
+
+@media screen and (min-width: 1025px) {
+  .tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+
+  .header img {
+    height: 2.5rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+  }
+
+  #pen, #watch {
+    width: 47%;
+  }
+
+  .product .container {
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0;
+    justify-content: space-between;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .navigation .container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+  }
 }

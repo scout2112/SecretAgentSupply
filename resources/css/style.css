@@ -181,19 +181,45 @@ html {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 471px){
   html {
     font-size: 20px;
   }
 
+  .header .container {
+    width: 750px;
+  }
+
+  .header h3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .header img {
     height: 2.5rem;
-    margin-left: 4rem;
+    margin-left: .5rem;
     margin-right: 2rem;
   }
 
+  .banner .container {
+    display: flex;
+    justify-content: flex-start;
+    width: 750px;
+  }
+  #new p {
+    font-weight: normal;
+  }
+
+  #new h2 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: normal;
+    line-height: 2.5rem;
+    font-size: 1.75rem;
+  }
+
   #pen, #watch {
-    width: 47%;
+    width: 42%;
   }
 
   .product .container {
@@ -219,4 +245,42 @@ html {
     margin-top: .75rem;
     margin-bottom: .75rem;
   }
+
+  .information .container {
+    width: 750px;
+  }
+
+  .information .item {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+  }
+
+  .information .item p {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer .container {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+
+  #glasses, #watch {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .navigation .container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+  }
+  
 }
